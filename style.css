@@ -1,0 +1,301 @@
+body{
+font-family:Poppins;
+margin:0;
+background:#f4f6ff;
+}
+
+/* HERO */
+
+.hero{
+min-height:100vh;
+background:linear-gradient(135deg,#6a11cb,#2575fc);
+color:white;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:40px;
+}
+
+.hero-container{
+display:flex;
+align-items:center;
+justify-content:space-between;
+max-width:1100px;
+width:100%;
+gap:60px;
+flex-wrap:wrap;
+}
+
+.hero-text{
+flex:1;
+}
+
+.hero-title{
+font-size:60px;
+font-weight:800;
+margin-bottom:10px;
+}
+
+.hero-buttons{
+display:flex;
+gap:15px;
+margin-top:20px;
+}
+
+.btn{
+background:white;
+padding:12px 25px;
+border-radius:25px;
+text-decoration:none;
+color:black;
+font-weight:600;
+}
+
+.btn-github{
+background:black;
+color:white;
+padding:12px 25px;
+border-radius:25px;
+text-decoration:none;
+}
+
+.profile{
+width:250px;
+border-radius:50%;
+border:6px solid white;
+}
+
+/* STATS */
+
+.stats{
+background:white;
+padding:50px;
+text-align:center;
+}
+
+.stats-container{
+display:flex;
+justify-content:center;
+gap:80px;
+}
+
+.stat h3{
+font-size:35px;
+color:#2575fc;
+}
+
+/* ABOUT */
+
+.about{
+display:flex;
+align-items:center;
+gap:40px;
+max-width:900px;
+margin:auto;
+padding:60px 20px;
+}
+
+.about-photo{
+width:200px;
+border-radius:20px;
+flex-shrink:0;
+}
+
+.about-text{
+flex:1;
+}
+
+@media (max-width:768px){
+.about{
+flex-direction:column;
+text-align:center;
+}
+}
+
+/* SKILLS */
+
+.skills{
+padding:60px;
+background:#fff8fb;
+text-align:center;
+}
+
+.skills-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+gap:25px;
+max-width:900px;
+margin:auto;
+}
+
+.skill-card{
+background:white;
+border-radius:15px;
+padding:25px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.skill-card img{
+width:60px;
+}
+
+/* PROJECTS */
+
+.projects{
+padding:80px 20px;
+text-align:center;
+}
+
+.project-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+max-width:1100px;
+margin:auto;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.project-icon{
+font-size:40px;
+}
+
+.project-desc{
+font-size:14px;
+color:#666;
+}
+
+.tag{
+display:inline-block;
+padding:5px 12px;
+border-radius:20px;
+font-size:12px;
+font-weight:600;
+}
+
+.tag.ml{
+background:#e8f0ff;
+color:#3b6cff;
+}
+
+.tag.dl{
+background:#ffe8f2;
+color:#d63384;
+}
+
+.tag.ai{
+background:#e8fff2;
+color:#28a745;
+}
+
+.modal{
+display:none;
+position:fixed;
+z-index:1000;
+left:0;
+top:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.5);
+}
+
+.modal-content{
+background:white;
+margin:10% auto;
+padding:30px;
+width:400px;
+border-radius:15px;
+text-align:left;
+max-height: 80vh;          /* batas tinggi */
+overflow-y: auto;          /* scroll kalau kepanjangan */
+padding: 20px;
+}
+
+.modal-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.modal-links a {
+    text-decoration: none;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.modal-links .icon {
+    margin-right: 6px;
+}
+
+.close{
+float:right;
+font-size:25px;
+cursor:pointer;
+}
+
+/* EDUCATION */
+
+.education{
+padding:70px;
+background:white;
+text-align:center;
+}
+
+.edu-card{
+max-width:500px;
+margin:auto;
+background:#f7f8ff;
+padding:30px;
+border-radius:15px;
+}
+
+/* CONTACT */
+
+.contact{
+padding:80px 10%;
+text-align:center;
+}
+
+.contact-container{
+display:flex;
+justify-content:center;
+gap:30px;
+}
+
+.contact-card{
+width:90px;
+height:90px;
+background:white;
+border-radius:20px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:40px;
+box-shadow:0 8px 20px rgba(0,0,0,0.1);
+text-decoration:none;   /* ini penting */
+
+.contact-card:link,
+.contact-card:visited,
+.contact-card:hover,
+.contact-card:active{
+text-decoration:none;
+}
+}
+
+.fa-whatsapp{color:#25D366;}
+.fa-linkedin{color:#0077B5;}
+.fa-envelope{color:#EA4335;}
+.fa-github{color:#000;}
+
+footer{
+padding:20px;
+background:#333;
+color:white;
+text-align:center;
+}
